@@ -161,19 +161,19 @@ def play():
     b_play.destroy()
     
     # configuração do bodyframe
-    icon_pedra = Image.open("images\pedra.png")
+    icon_pedra = Image.open("images/pedra.png")
     icon_pedra = icon_pedra.resize((50,50))
     icon_pedra = ImageTk.PhotoImage(icon_pedra)
     b_icon_pedra = Button(bodyframe, command = lambda: jogar('pedra'), width=50, image=icon_pedra, compound=CENTER, bg=co11, fg=co1, font=("Ivy 9 bold"), anchor=CENTER, relief=FLAT)
     b_icon_pedra.place(x=15, y=60)
 
-    icon_papel = Image.open("images\papel.png")
+    icon_papel = Image.open("images/papel.png")
     icon_papel = icon_papel.resize((50,50))
     icon_papel = ImageTk.PhotoImage(icon_papel)
     b_icon_papel = Button(bodyframe, command = lambda: jogar('papel'), width=50, image=icon_papel, compound=CENTER, bg=co11, fg=co1, font=("Ivy 9 bold"), anchor=CENTER, relief=FLAT)
     b_icon_papel.place(x=101, y=60)
 
-    icon_tesoura = Image.open("images\tesoura.png")
+    icon_tesoura = Image.open("images/tesoura.png")
     icon_tesoura = icon_tesoura.resize((50,50))
     icon_tesoura = ImageTk.PhotoImage(icon_tesoura)
     b_icon_tesoura = Button(bodyframe, command = lambda: jogar('tesoura'), width=50, image=icon_tesoura, compound=CENTER, bg=co11, fg=co1, font=("Ivy 9 bold"), anchor=CENTER, relief=FLAT)
