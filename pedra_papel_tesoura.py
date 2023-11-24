@@ -79,7 +79,6 @@ def jogar(i):
     global rondas, player_points, pc_points
     
     if rondas > 0:
-        print(rondas)
         opcoes = ['pedra', 'papel', 'tesoura']
         pc = random.choice(opcoes)
         player = i
@@ -91,17 +90,14 @@ def jogar(i):
         
         #empates
         if player == 'pedra' and pc == 'pedra':
-            print('empate')
             app_tie['bg'] = co3
             app_1_line['bg'] = co1
             app_2_line['bg'] = co1
         elif player == 'papel' and pc == 'papel':
-            print('empate')
             app_tie['bg'] = co3
             app_1_line['bg'] = co1
             app_2_line['bg'] = co1
         elif player == 'tesoura' and pc == 'tesoura':
-            print('empate')
             app_tie['bg'] = co3
             app_1_line['bg'] = co1
             app_2_line['bg'] = co1
@@ -109,42 +105,36 @@ def jogar(i):
             
         #perdas e ganhos
         elif player == 'pedra' and pc == 'papel':
-            print('perdeu')
             app_tie['bg'] = co1
             app_1_line['bg'] = co1
             app_2_line['bg'] = co5
             pc_points += 1
             
         elif player == 'pedra' and pc == 'tesoura':
-            print('ganhou')
             app_tie['bg'] = co1
             app_1_line['bg'] = co4
             app_2_line['bg'] = co1
             player_points += 1
         
         elif player == 'papel' and pc == 'tesoura':
-            print('perdeu')
             app_tie['bg'] = co1
             app_1_line['bg'] = co1
             app_2_line['bg'] = co5
             pc_points += 1
             
         elif player == 'papel' and pc == 'pedra':
-            print('ganhou')
             app_tie['bg'] = co1
             app_1_line['bg'] = co4
             app_2_line['bg'] = co1
             player_points += 1
             
         elif player == 'tesoura' and pc == 'pedra':
-            print('perdeu')
             app_tie['bg'] = co1
             app_1_line['bg'] = co1
             app_2_line['bg'] = co5
             pc_points += 1
             
         elif player == 'tesoura' and pc == 'papel':
-            print('ganhou')
             app_tie['bg'] = co1
             app_1_line['bg'] = co4
             app_2_line['bg'] = co1
